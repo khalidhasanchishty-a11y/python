@@ -1,0 +1,102 @@
+
+
+# 1. Input two integers and display all arithmetic operations.
+print("Q1: Arithmetic Operations")
+a = int(input("Enter first integer: "))
+b = int(input("Enter second integer: "))
+print(f"Addition: {a + b}")
+print(f"Subtraction: {a - b}")
+print(f"Multiplication: {a * b}")
+print(f"Division: {a / b}")
+print(f"Floor Division: {a // b}")
+print(f"Modulus: {a % b}")
+print(f"Exponentiation: {a ** b}")
+print()
+
+# 2. Takes an integer, apply +=10, -=5, *=2, /=3 and display after each.
+print("Q2: Sequential Operations")
+num = int(input("Enter an integer: "))
+print(f"Initial value: {num}")
+num += 10
+print(f"After += 10: {num}")
+num -= 5
+print(f"After -= 5: {num}")
+num *= 2
+print(f"After *= 2: {num}")
+num /= 3
+print(f"After /= 3: {num}")
+print()
+
+# 3. Input two numbers and check relational conditions.
+print("Q3: Relational Operators")
+x = float(input("Enter first number: "))
+y = float(input("Enter second number: "))
+print(f"Are they equal? {x == y}")
+print(f"Are they not equal? {x != y}")
+print(f"Is first greater than second? {x > y}")
+print(f"Is first less than or equal to second? {x <= y}")
+print()
+
+# 4. Input marks of two subjects, print "Pass" if both >= 35.
+print("Q4: Pass/Fail Check")
+m1 = float(input("Enter marks in Subject 1: "))
+m2 = float(input("Enter marks in Subject 2: "))
+if m1 >= 35 and m2 >= 35:
+    print("Pass")
+else:
+    print("Fail")
+print()
+
+# 5. Input a sentence and a word, check if word is in sentence.
+print("Q5: 'in' Operator")
+sentence = input("Enter a sentence: ")
+word = input("Enter a word to search: ")
+if word in sentence:
+    print(f"'{word}' is present in the sentence.")
+else:
+    print(f"'{word}' is NOT present in the sentence.")
+print()
+
+# 6. Input a sentence and a word, check if word is NOT in sentence.
+print("Q6: 'not in' Operator")
+sentence2 = input("Enter a sentence: ")
+word2 = input("Enter a word to search: ")
+if word2 not in sentence2:
+    print(f"'{word2}' is NOT present in the sentence.")
+else:
+    print(f"'{word2}' is present in the sentence.")
+print()
+
+# 7. Create two variables, check 'a is b', then create c and check 'a is c'.
+print("Q7: Identity Operator 'is'")
+a = 10
+b = 10
+print(f"a = {a}, b = {b}")
+print(f"a is b: {a is b}")  # True for small integers (interned)
+c = 10
+print(f"c = {c}")
+print(f"a is c: {a is c}")  # Also True
+print()
+
+# 8. Using variables from Q7, check 'a is not b' and 'a is not c'. Explain output.
+print("Q8: 'is not' Operator")
+print(f"a is not b: {a is not b}")  # False (same object for small ints)
+print(f"a is not c: {a is not c}")  # False
+print("Explanation: Python interns small integers (-5 to 256), so a, b, c refer to same object.")
+print()
+
+# 9. Input two integers, display Bitwise AND, OR, XOR.
+print("Q9: Bitwise AND, OR, XOR")
+p = int(input("Enter first integer: "))
+q = int(input("Enter second integer: "))
+print(f"Bitwise AND (&): {p & q}")
+print(f"Bitwise OR (|): {p | q}")
+print(f"Bitwise XOR (^): {p ^ q}")
+print()
+
+# 10. Input an integer, display Bitwise NOT, and scholarship logic.
+print("Q10: Bitwise NOT & Scholarship")
+n = int(input("Enter an integer: "))
+print(f"Bitwise NOT (~{n}): {~n}")
+mark1 = float(input("Enter marks in Subject 1: "))
+mark2 = float(input("Enter marks in Subject 2: "))
