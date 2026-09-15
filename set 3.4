@@ -1,0 +1,36 @@
+# 1. Employee details
+emp = {"Name": "Amit", "Department": "IT", "Salary": 45000, "Designation": "Developer"}
+print("Name:", emp["Name"], "| Department:", emp["Department"], "| Salary:", emp["Salary"], "| Designation:", emp["Designation"])
+
+# 2. Add Email and Phone Number
+emp["Email"] = "amit@example.com"
+emp["Phone Number"] = "9876543210"
+print("Updated Dict:", emp)
+
+# 3. Update Salary
+employee = {'Name': 'Amit', 'Salary': 45000}
+employee['Salary'] = 52000
+print("Updated Salary Dict:", employee)
+
+# 4. Remove specific key and last inserted item
+data = {"Name": "Rahul", "Age": 22, "City": "Delhi", "Branch": "CSE"}
+data.pop("Age")
+print("After removing specific key ('Age'):", data)
+data.popitem()
+print("After removing last item:", data)
+
+# 5. Keys, Values, and Key-Value pairs
+student = {"Roll": 101, "Name": "Rahul", "Branch": "CSE", "Sem": 5}
+print("Keys:", list(student.keys()))
+print("Values:", list(student.values()))
+print("Key-Value Pairs:", list(student.items()))
+
+# 6. Check key existence
+search_key = "Name"
+if search_key in student:
+    print("Key Found")
+else:
+    print("Key Not Found")
+
+# 7. Count total key-value pairs
+print("Total key-value pairs:", len(student))
