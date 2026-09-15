@@ -1,0 +1,76 @@
+# 1. Favorite movies
+movies = ["Inception", "Interstellar", "The Dark Knight", "The Matrix", "Pulp Fiction"]
+print("Movies:", movies)
+
+# 2. First, last, and middle element
+numbers = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+print("First:", numbers[0], "Last:", numbers[-1], "Middle:", numbers[len(numbers)//2])
+
+# 3. Reverse cities using slicing
+cities = ["Delhi", "Mumbai", "Agra", "Jaipur", "Bangalore"]
+print("Reversed Cities:", cities[::-1])
+
+# 4. Combine two lists
+list1 = [1, 2, 3, 4, 5]
+list2 = [6, 7, 8, 9, 10]
+print("Combined:", list1 + list2)
+
+# 5. Display list 3 times
+sample = ["Python", "Java"]
+print("Repeated:", sample * 3)
+
+# 6. Add fruit and insert color
+fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"]
+fruits.append("Kiwi")
+fruits.insert(1, "Blue")
+print("Fruits & Color:", fruits)
+
+# 7. Extend and remove last element
+a = [1, 2, 3]
+b = [4, 5, 6]
+a.extend(b)
+a.pop()
+print("Extended & Popped:", a)
+
+# 8. Del 3rd element and clear all
+items = [100, 200, 300, 400, 500]
+del items[2]
+print("After Del:", items)
+items.clear()
+print("After Clear:", items)
+
+# 9. Sort ascending and descending
+num_list = [42, 12, 88, 3, 25]
+num_list.sort()
+print("Ascending:", num_list)
+num_list.sort(reverse=True)
+print("Descending:", num_list)
+
+# 10. Reverse method
+data = ["A", "B", "C", "D"]
+data.reverse()
+print("Reversed:", data)
+
+# 11. Copy list
+original = [1, 2, 3, 4]
+copied = original.copy()
+print("Original:", original, "Copied:", copied)
+
+# 12. Count duplicates
+dup = [1, 2, 2, 3, 4, 2, 5]
+print("Count of 2:", dup.count(2))
+
+# 13. Index of element
+names = ["Alice", "Bob", "Charlie", "David"]
+print("Index of Charlie:", names.index("Charlie"))
+
+# 14. 3x3 Matrix
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print("Matrix:", matrix)
+
+# 15. Slicing (1 to 10)
+nums = list(range(1, 11))
+print("First 5:", nums[:5])
+print("Last 5:", nums[-5:])
+print("Every 2nd:", nums[::2])
+print("Reversed:", nums[::-1])
