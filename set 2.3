@@ -1,0 +1,156 @@
+# Q1. Print all even and odd numbers separately from 1 to 50
+
+print("Q1 - Even Numbers:")
+for i in range(1, 51):
+    if i % 2 == 0:
+        print(i, end=" ")
+
+print("\n\nQ1 - Odd Numbers:")
+for i in range(1, 51):
+    if i % 2 != 0:
+        print(i, end=" ")
+
+
+# Q2. Sum of numbers between 1 and 100 divisible by both 3 and 5
+
+sum = 0
+
+for i in range(1, 101):
+    if i % 3 == 0 and i % 5 == 0:
+        sum = sum + i
+
+print("\n\nQ2 - Sum =", sum)
+
+
+# Q3. Accept 10 numbers and count positive, negative and zero
+
+positive = 0
+negative = 0
+zero = 0
+
+for i in range(10):
+    num = int(input("\nQ3 - Enter number: "))
+
+    if num > 0:
+        positive = positive + 1
+    elif num < 0:
+        negative = negative + 1
+    else:
+        zero = zero + 1
+
+print("Positive numbers =", positive)
+print("Negative numbers =", negative)
+print("Zero numbers =", zero)
+
+
+# Q4. Check whether a number is Armstrong or not
+
+num = int(input("\nQ4 - Enter a number: "))
+
+original = num
+digits = len(str(num))
+sum = 0
+
+while num > 0:
+    digit = num % 10
+    sum = sum + digit ** digits
+    num = num // 10
+
+if sum == original:
+    print("Armstrong Number")
+else:
+    print("Not an Armstrong Number")
+
+
+# Q5. Multiplication tables from 1 to 5
+# Display only even multiples
+
+print("\nQ5 - Tables from 1 to 5:")
+
+for i in range(1, 6):
+    print("\nTable of", i)
+
+    for j in range(1, 11):
+        result = i * j
+
+        if result % 2 == 0:
+            print(i, "x", j, "=", result)
+
+
+# Q6. Pattern using nested loops
+
+print("\nQ6 - Pattern:")
+
+for i in range(1, 6):
+    for j in range(1, i + 1):
+        print("*", end=" ")
+    print()
+
+
+# Q7. Print pairs (i, j) whose sum is even
+
+print("\nQ7 - Pairs whose sum is even:")
+
+for i in range(1, 6):
+    for j in range(1, 6):
+
+        if (i + j) % 2 == 0:
+            print("(", i, ",", j, ")")
+
+
+# Q8. Tables from 2 to 5
+# Display only multiples divisible by 3
+
+print("\nQ8 - Multiplication Tables:")
+
+for i in range(2, 6):
+    print("\nTable of", i)
+
+    for j in range(1, 11):
+        result = i * j
+
+        if result % 3 == 0:
+            print(i, "x", j, "=", result)
+
+
+# Q9. Print 1 to 20 and skip numbers divisible by 3
+
+print("\nQ9 - Numbers from 1 to 20 except multiples of 3:")
+
+for i in range(1, 21):
+
+    if i % 3 == 0:
+        continue
+
+    print(i, end=" ")
+
+
+# Q10. Repeatedly accept numbers and calculate sum
+# Stop when user enters 0
+
+print("\n\nQ10 - Enter numbers to calculate sum:")
+
+total = 0
+
+while True:
+    num = int(input("Enter number (0 to stop): "))
+
+    if num == 0:
+        break
+
+    total = total + num
+
+print("Total Sum =", total)
+
+
+# Q11. Print numbers from 1 to 10
+# Use pass when number is 5
+
+print("\nQ11 - Numbers from 1 to 10:")
+
+for i in range(1, 11):
+
+    if i == 5:
+        pass
+
+    print(i)
