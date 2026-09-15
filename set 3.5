@@ -1,0 +1,65 @@
+# 1. Add elements to set
+s1 = {10, 20}
+s1.update([25, 35, 45])
+print("Updated Set:", s1)
+
+# 2. Remove using remove(), discard(), pop()
+s2 = {10, 20, 30, 40, 50}
+s2.remove(20)
+print("After remove(20):", s2)
+s2.discard(99)  # Won't raise error if element not present
+print("After discard(99):", s2)
+s2.pop()
+print("After pop():", s2)
+
+# 3. Set operations: Union, Intersection, Difference, Symmetric Difference
+set_a = {1, 2, 3, 4}
+set_b = {3, 4, 5, 6}
+print("Union:", set_a | set_b)
+print("Intersection:", set_a & set_b)
+print("Difference (A-B):", set_a - set_b)
+print("Symmetric Difference:", set_a ^ set_b)
+
+# 4. Check disjoint sets
+set_x = {1, 2, 3}
+set_y = {4, 5, 6}
+print("Is Disjoint:", set_x.isdisjoint(set_y))
+
+# 5. Remove duplicates from list
+lst = [10, 20, 20, 30, 40, 40, 50]
+unique_lst = list(set(lst))
+print("Without Duplicates:", unique_lst)
+
+# 6. Common subjects chosen by two students
+Student1 = {"Python", "Java", "SQL", "Excel"}
+Student2 = {"Python", "C", "Excel", "Power BI"}
+print("Common Subjects:", Student1 & Student2)
+
+# 15. College Clubs Operations
+Science_Club = {"Aman", "Riya", "Rahul", "Priya", "Ankit"}
+Coding_Club = {"Rahul", "Ankit", "Simran", "Rohit", "Riya"}
+
+# 1. Enrolled in either club
+print("Either Club:", Science_Club | Coding_Club)
+
+# 2. Enrolled in both clubs
+print("Both Clubs:", Science_Club & Coding_Club)
+
+# 3. Only in Science Club
+print("Only Science Club:", Science_Club - Coding_Club)
+
+# 4. Only in Coding Club
+print("Only Coding Club:", Coding_Club - Science_Club)
+
+# 5. Check common members
+print("Have Common Members:", not Science_Club.isdisjoint(Coding_Club))
+
+# 6. Add new student to Coding Club
+Coding_Club.add("Karan")
+
+# 7. Remove one student from Science Club
+Science_Club.remove("Aman")
+
+# 8. Print updated sets
+print("Updated Science Club:", Science_Club)
+print("Updated Coding Club:", Coding_Club)
