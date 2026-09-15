@@ -1,0 +1,51 @@
+# 1. Access elements
+t1 = (10, 20, 30, 40, 50)
+print("All:", t1)
+print("First:", t1[0], "Last:", t1[-1], "Middle:", t1[len(t1)//2])
+
+# 2. Count and Index
+t2 = (5, 12, 5, 8, 20, 5, 14)
+print("Count of 5:", t2.count(5))
+print("Index of 8:", t2.index(8))
+
+# 3. Concatenate and Repeat
+t3_a = (1, 2)
+t3_b = (3, 4)
+print("Concatenated:", t3_a + t3_b)
+print("Repeated:", t3_a * 3)
+
+# 4. Reverse, Max, Min, Sum, Average
+t4 = (10, 25, 5, 40, 15)
+print("Reversed:", t4[::-1])
+print("Max:", max(t4), "Min:", min(t4))
+print("Sum:", sum(t4), "Average:", sum(t4)/len(t4))
+
+# 5. Convert List to Tuple and vice versa
+lst = [100, 200, 300]
+tup = tuple(lst)
+print("List to Tuple:", tup)
+print("Tuple to List:", list(tup))
+
+# 6. Packing, Unpacking, Extended Unpacking
+student_data = ("Rahul", 101, "A+", "Maths", "Science", "English")  # Packing
+name, roll, grade, *subjects = student_data  # Unpacking + Extended
+print("Name:", name, "Roll:", roll, "Grade:", grade)
+print("Subjects:", subjects)
+
+# 7. Nested Tuple
+nested = (1, 2, (30, 40, 50), 4)
+print("Inner tuple element (40):", nested[2][1])
+
+# 8. Student records list
+records = [("Amit", 85), ("Priya", 92), ("Rohan", 78)]
+for name, marks in records:
+    print(f"Name: {name}, Marks: {marks}")
+
+# 9. Swap two variables
+x, y = 10, 20
+x, y = y, x
+print("Swapped:", "x =", x, "y =", y)
+
+# 10. Squares using tuple comprehension generator
+squares = tuple(x * x for x in range(1, 11))
+print("Squares:", squares)
