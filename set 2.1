@@ -1,0 +1,148 @@
+# Q1. Positive, Negative or Zero
+
+num = int(input("Q1 - Enter a number: "))
+
+if num > 0:
+    print("Positive")
+elif num < 0:
+    print("Negative")
+else:
+    print("Zero")
+
+
+# Q2. Even or Odd
+
+num = int(input("\nQ2 - Enter an integer: "))
+
+if num % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+
+
+# Q3. Largest Among Three Numbers
+
+a = int(input("\nQ3 - Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+
+if a >= b and a >= c:
+    print("Largest =", a)
+elif b >= a and b >= c:
+    print("Largest =", b)
+else:
+    print("Largest =", c)
+
+
+# Q4. Grade According to Marks
+
+marks = int(input("\nQ4 - Enter marks: "))
+
+if marks >= 90:
+    print("Grade A")
+elif marks >= 75:
+    print("Grade B")
+elif marks >= 60:
+    print("Grade C")
+elif marks >= 40:
+    print("Grade D")
+else:
+    print("Fail")
+
+
+# Q5. Leap Year
+
+year = int(input("\nQ5 - Enter year: "))
+
+if year % 400 == 0:
+    print("Leap Year")
+elif year % 100 == 0:
+    print("Not a Leap Year")
+elif year % 4 == 0:
+    print("Leap Year")
+else:
+    print("Not a Leap Year")
+
+
+# Q6. ATM Withdrawal
+
+correct_pin = 1234
+pin = int(input("\nQ6 - Enter PIN: "))
+
+balance = 10000
+amount = int(input("Enter withdrawal amount: "))
+
+if pin != correct_pin:
+    print("Incorrect PIN")
+elif amount > balance:
+    print("Insufficient Balance")
+else:
+    balance = balance - amount
+    print("Withdrawal Successful")
+    print("Remaining Balance =", balance)
+
+
+# Q7. Scholarship Eligibility
+
+marks = int(input("\nQ7 - Enter marks: "))
+attendance = float(input("Enter attendance percentage: "))
+
+if marks >= 85 and attendance >= 75:
+    print("Eligible for Scholarship")
+else:
+    print("Not Eligible for Scholarship")
+
+
+# Q8. Electricity Bill
+
+units = int(input("\nQ8 - Enter electricity units: "))
+
+if units <= 100:
+    bill = units * 5
+elif units <= 300:
+    bill = (100 * 5) + ((units - 100) * 7)
+else:
+    bill = (100 * 5) + (200 * 7) + ((units - 300) * 10)
+
+print("Electricity Bill = ₹", bill)
+
+
+# Q9. Calculator
+
+a = float(input("\nQ9 - Enter first number: "))
+b = float(input("Enter second number: "))
+
+print("1. Addition")
+print("2. Subtraction")
+print("3. Multiplication")
+print("4. Division")
+
+choice = int(input("Enter your choice: "))
+
+if choice == 1:
+    print("Result =", a + b)
+elif choice == 2:
+    print("Result =", a - b)
+elif choice == 3:
+    print("Result =", a * b)
+elif choice == 4:
+    if b != 0:
+        print("Result =", a / b)
+    else:
+        print("Cannot divide by zero")
+else:
+    print("Invalid Choice")
+
+
+# Q10. Username and Password Validation
+
+correct_username = "admin"
+correct_password = "1234"
+
+username = input("\nQ10 - Enter username: ")
+password = input("Enter password: ")
+
+if username == correct_username and password == correct_password:
+    print("Login Successful")
+else:
+    print("Invalid Username or Password.")
