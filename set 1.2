@@ -1,0 +1,95 @@
+
+
+# 1. Create variables to store your name, age, city, and salary, then print them.
+name = "Aarav"
+age = 22
+city = "Mumbai"
+salary = 45000.50
+print("Q1:")
+print(f"Name: {name}, Age: {age}, City: {city}, Salary: {salary}")
+print()
+
+# 2. Swap the values of two variables using both the traditional method and Python's tuple unpacking.
+print("Q2:")
+a, b = 10, 20
+print(f"Before swap (traditional): a = {a}, b = {b}")
+# Traditional method
+temp = a
+a = b
+b = temp
+print(f"After swap (traditional): a = {a}, b = {b}")
+
+# Reset values
+a, b = 10, 20
+print(f"Before swap (tuple unpacking): a = {a}, b = {b}")
+# Pythonic tuple unpacking
+a, b = b, a
+print(f"After swap (tuple unpacking): a = {a}, b = {b}")
+print()
+
+# 3. Accept two numbers from the user and print their sum.
+print("Q3:")
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+print(f"Sum = {num1 + num2}")
+print()
+
+# 4. Create variables of type int, float, str, bool, and display their data types using type().
+print("Q4:")
+var_int = 42
+var_float = 3.14
+var_str = "Hello"
+var_bool = True
+print(f"int: {var_int} -> {type(var_int)}")
+print(f"float: {var_float} -> {type(var_float)}")
+print(f"str: {var_str} -> {type(var_str)}")
+print(f"bool: {var_bool} -> {type(var_bool)}")
+print()
+
+# 5. Create three variables with one statement and print them.
+print("Q5:")
+x, y, z = 1, 2, 3
+print(f"x = {x}, y = {y}, z = {z}")
+print()
+
+# 6. Assign the same value to three variables and verify using 'is'.
+print("Q6:")
+p = q = r = 100
+print(f"p = {p}, q = {q}, r = {r}")
+print(f"p is q: {p is q}")
+print(f"q is r: {q is r}")
+print(f"p is r: {p is r}")
+print()
+
+# 7. Delete a variable using del and observe the error when trying to access it.
+print("Q7:")
+temp_var = "I will be deleted"
+print(f"Before del: temp_var = {temp_var}")
+del temp_var
+try:
+    print(temp_var)  # This will raise NameError
+except NameError as e:
+    print(f"Error after del: {e}")
+print()
+
+# 8. Write a program to input your age and print: You are <age> years old.
+print("Q8:")
+age_input = int(input("Enter your age: "))
+print(f"You are {age_input} years old.")
+print()
+
+# 9. Write a program to input the first name and last name separately and display the full name in a single line.
+print("Q9:")
+first_name = input("Enter first name: ")
+last_name = input("Enter last name: ")
+full_name = first_name + " " + last_name
+print(f"Full name: {full_name}")
+print()
+
+# 10. Write a program to input an employee's name and monthly salary, then display the annual salary.
+print("Q10:")
+emp_name = input("Enter employee name: ")
+monthly_salary = float(input("Enter monthly salary: "))
+annual_salary = monthly_salary * 12
+print(f"Employee: {emp_name}")
+print(f"Annual Salary: {annual_salary}")
