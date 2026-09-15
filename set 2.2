@@ -1,0 +1,47 @@
+# WAP 1. To calculate average of first n natural numbers
+# Where n is to be entered by the user
+
+n = int(input("Enter n: "))
+
+sum = 0
+
+for i in range(1, n + 1):
+    sum = sum + i
+
+average = sum / n
+
+print("Average =", average)
+
+
+# WAP 2. To print the multiplication table of n
+# Where n is to be entered by the user
+
+n = int(input("\nEnter n for multiplication table: "))
+
+for i in range(1, 11):
+    print(n, "x", i, "=", n * i)
+
+
+# WAP 3. To calculate the factorial of n
+
+n = int(input("\nEnter n to calculate factorial: "))
+
+factorial = 1
+
+for i in range(1, n + 1):
+    factorial = factorial * i
+
+print("Factorial =", factorial)
+
+
+# WAP 4. To calculate the power(x, n)
+
+x = int(input("\nEnter x: "))
+n = int(input("Enter n: "))
+
+power = 1
+
+for i in range(n):
+    power = power * x
+
+print("Power =", power)
