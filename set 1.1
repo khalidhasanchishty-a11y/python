@@ -1,0 +1,132 @@
+# Q1. Arithmetic Operations
+
+a = int(input("Enter first integer: "))
+b = int(input("Enter second integer: "))
+
+print("Addition =", a + b)
+print("Subtraction =", a - b)
+print("Multiplication =", a * b)
+print("Division =", a / b)
+print("Floor Division =", a // b)
+print("Modulus =", a % b)
+print("Exponentiation =", a ** b)
+
+
+# Q2. Assignment Operators
+
+num = int(input("\nEnter an integer: "))
+
+num += 10
+print("After += 10:", num)
+
+num -= 5
+print("After -= 5:", num)
+
+num *= 2
+print("After *= 2:", num)
+
+num /= 3
+print("After /= 3:", num)
+
+
+# Q3. Comparison Operators
+
+a = int(input("\nEnter first number: "))
+b = int(input("Enter second number: "))
+
+print("Equal:", a == b)
+print("Not Equal:", a != b)
+print("First Greater:", a > b)
+print("First Less or Equal:", a <= b)
+
+
+# Q4. Pass or Fail
+
+marks1 = int(input("\nEnter first subject marks: "))
+marks2 = int(input("Enter second subject marks: "))
+
+if marks1 >= 35 and marks2 >= 35:
+    print("Pass")
+else:
+    print("Fail")
+
+
+# Q5. In Operator
+
+sentence = input("\nEnter a sentence: ")
+word = input("Enter a word: ")
+
+print("Word present:", word in sentence)
+
+
+# Q6. Not In Operator
+
+sentence = input("\nEnter a sentence: ")
+word = input("Enter a word: ")
+
+print("Word not present:", word not in sentence)
+
+
+# Q7. Is Operator
+
+a = 10
+b = 10
+
+print("a is b:", a is b)
+
+c = a
+
+print("a is c:", a is c)
+
+
+# Q8. Is Not Operator
+
+print("\na is not b:", a is not b)
+print("a is not c:", a is not c)
+
+
+# Q9. Bitwise AND and OR
+
+a = int(input("\nEnter first integer: "))
+b = int(input("Enter second integer: "))
+
+print("AND (&) =", a & b)
+print("OR (|) =", a | b)
+
+
+# Q10. XOR, NOT and Scholarship
+
+a = int(input("\nEnter an integer: "))
+b = int(input("Enter another number: "))
+
+print("XOR (^) =", a ^ b)
+print("NOT (~) =", ~a)
+
+mark1 = int(input("Enter first mark: "))
+mark2 = int(input("Enter second mark: "))
+
+if mark1 >= 90 or mark2 >= 90:
+    print("Eligible for Scholarship")
+
+failed = mark1 < 35 or mark2 < 35
+
+print("Student has not failed:", not failed)
+
+
+# Q11. Bit Shifting
+
+num = int(input("\nEnter a number: "))
+
+print("Left Shift =", num << 2)
+print("Right Shift =", num >> 2)
+
+
+# Q12. Logical AND
+
+a = int(input("\nEnter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+
+result = a > b and c > a
+
+print("Result =", result)
